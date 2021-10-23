@@ -5,23 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Survy Form</title>
+    <title>Survey Form</title>
     </head>
     <body>
-        <title id="title">freeCodeCamp Survey Form</title>
+      <div id ="bg">
+        <div id="inner">
+        <h1>freeCodeCamp Survey Form</h1>
         <p id="description">Thank you for taking the time to help us improve the platform</p>
         <form action="" id="survey-form">
           <div class="form-group">
-            <label for="name" id="name-label">Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name">
+            <div id="name"><label for="name" id="name-label">Name</label></div>
+            <div id="namefield"><input type="text" class="form-control" name="name" placeholder="Enter your name"></div>
           </div>
           <div class="form-group">
-            <label for="email" id="email-label">Email</label>
-            <input type="text" id="email" name="email" required pattern=".+@globex\.com" placeholder="Enter your email">
+            <div id="name"><label for="email" id="email-label">Email</label></div>
+            <div id="namefield"><input type="text" class="form-control" name="email" required pattern=".+@globex\.com" placeholder="Enter your email"></div>
           </div>
           <div class="form-group">
-            <label for="age" id="number-label">Age (optional)</label>
-            <input type="number" id="age" name="age" min="10" max="100" placeholder="99">
+            <div id="name"><label for="age" id="number-label">Age (optional)</label></div>
+            <div id= "namefield"><input type="number" class="form-control" name="age" min="10" max="100" placeholder="99"></div>
           </div>
           <div class="form-group">
             <p>Which option best describes your current role?</p>
@@ -114,5 +116,7 @@
             <button type="submit" id="submit" class="submit-button">Submit</button>
           </div>
         </form>
+      </div>
+        </div>
     </body>
 </html>
